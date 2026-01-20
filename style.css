@@ -30,7 +30,7 @@ header {
 }
 
 .normal {
-  color: #ffffff; /* plain white */
+  color: #ffffff; 
 }
 
 .gradient {
@@ -127,7 +127,7 @@ nav .menu a{
     color: #ffffff;
     font-weight:bolder;
     font-size: 40px;
-    padding-left: 65px;
+    padding-left: 120px;
 }
 
 .banner-content{
@@ -141,11 +141,80 @@ nav .menu a{
 }
 
 .buttons{
-    padding: 24px;
+    padding-top: 24px;
 }
 
 
+.about {
+  min-height: 50px;
+  background: linear-gradient(180deg, #1a0833 0%, #0f051a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  color: #ffffff;
+}
 
+.content {
+  max-width: 1000px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cfc8e2;
+  margin-bottom: 12px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 50px 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.stat h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #20f2a5;
+  margin-bottom: 8px;
+}
+
+.stat span {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #b9b3d3;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
