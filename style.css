@@ -64,7 +64,89 @@ nav .menu a{
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+
+} 
+
+.btn2{
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #00FF88;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: transparent;
+    border: #00FF88;
+    border: solid 1px;
 
 }
+
+
+
+.banner {
+  min-height: 100vh;
+  width: 100%;
+
+  background: url("assets/hero-bg.png") center / cover no-repeat;
+
+  
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.banner-visual {
+  position: relative;
+  width: 420px;  
+  height: 420px;
+}
+
+
+.banner-visual .circle {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.banner-visual .mic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 120px; 
+  z-index: 2;
+}
+
+.heading{
+    color: #ffffff;
+    font-weight:bolder;
+    font-size: 40px;
+    padding-left: 65px;
+}
+
+.banner-content{
+    align-items: center;
+    justify-content: center;
+}    
+
+.wh{
+    color: #ffffff;
+    
+}
+
+.buttons{
+    padding: 24px;
+}
+
+
+
+
+
+
 
