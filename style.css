@@ -55,6 +55,44 @@ nav .menu a{
     text-decoration: none;
 }
 
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 576px) {
+
+  .navbar {
+    margin: 0 16px;
+    padding: 14px 0;
+  }
+
+
+  nav .menu {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+
+
+  .logo {
+    font-size: 26px;
+  }
+}
+
+
+
 .btn{
     padding: 12px 20px;
     font-size: 16px;
@@ -310,11 +348,10 @@ h1 {
 
 
 body {
-  background: linear-gradient(180deg, #2a0d4d 0%, #12051f 100%);
+  background: #1A0B2E;
   color: #ffffff;
 }
 
-/* ---------- FEATURED EPISODES ---------- */
 
 .featured {
   padding: 80px 24px;
@@ -363,7 +400,7 @@ body {
   justify-content: center;
   font-size: 3rem;
   color: #fff;
-  background: radial-gradient(circle, rgba(255,0,255,0.6), rgba(0,0,0,0.4));
+  
 }
 
 .episode-card h3 {
@@ -456,5 +493,89 @@ body {
 
   .socials {
     justify-content: center;
+  }
+}
+
+
+
+.footer {
+  background-image: url("assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+}
+
+.copyright {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 16px;
+  }
+
+  .logo {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    gap: 16px;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+
+@media (min-width: 993px) {
+  .logo {
+    font-size: 48px;
+  }
+
+  .social-icons img {
+    width: 22px;
+    height: 22px;
   }
 }
